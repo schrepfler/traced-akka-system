@@ -49,8 +49,8 @@ lazy val userService = (project in file("./user-service"))
       "com.typesafe.akka" %% "akka-stream" % akkaVersion,
       "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
 
-      "io.kamon" %% "kamon-bundle" % "2.0.0-RC3",
-      "io.kamon" %% "kamon-zipkin" % "2.0.0-RC1",
+      "io.kamon" %% "kamon-bundle" % "2.0.0",
+      "io.kamon" %% "kamon-zipkin" % "2.0.0",
       "ch.qos.logback" % "logback-classic" % "1.2.3",
 
       "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
@@ -73,8 +73,8 @@ lazy val externalUserService = (project in file("./external-user-service"))
       "com.typesafe.akka" %% "akka-stream" % akkaVersion,
       "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
 
-      "io.kamon" %% "kamon-bundle" % "2.0.0-RC3",
-      "io.kamon" %% "kamon-zipkin" % "2.0.0-RC1",
+      "io.kamon" %% "kamon-bundle" % "2.0.0",
+      "io.kamon" %% "kamon-zipkin" % "2.0.0",
       "ch.qos.logback" % "logback-classic" % "1.2.3",
 
       "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
