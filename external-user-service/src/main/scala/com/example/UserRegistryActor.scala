@@ -1,7 +1,15 @@
 package com.example
 
 //#user-registry-actor
-import akka.actor.{ Actor, ActorLogging, Props }
+import akka.actor.{Actor, ActorLogging, ActorSystem, Props}
+import akka.http.scaladsl.Http
+import akka.http.scaladsl.model.{HttpMessage, HttpRequest, HttpResponse}
+import akka.http.scaladsl.unmarshalling.Unmarshal
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
+import spray.json.DefaultJsonProtocol._
+
+import scala.concurrent.Future
+import scala.util.{Failure, Success}
 
 //#user-case-classes
 final case class User(name: String, age: Int, countryOfResidence: String)
